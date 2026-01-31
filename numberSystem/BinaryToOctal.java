@@ -1,4 +1,3 @@
-package numberSystem;
 
 // Q. Convert a Binary Number into its Octal Equivalent.
 // Example:
@@ -10,8 +9,8 @@ package numberSystem;
 //          011 → 3
 // Final Answer: 1011 (binary) = 13 (octal)
 
+package numberSystem;
 import java.util.Scanner;
-
 public class BinaryToOctal {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
