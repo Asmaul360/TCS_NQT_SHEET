@@ -27,8 +27,10 @@ public class RotateArray {
     }
     System.out.println("The new array is : ");
     for(int i=0;i<newArr.length;i++){
+        
         System.out.print(newArr[i] + " ");
     }
+    in.close();
   }
   
 }
