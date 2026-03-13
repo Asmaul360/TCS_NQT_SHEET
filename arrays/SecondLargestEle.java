@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class SecondLargestEle {
 
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -39,5 +40,6 @@ public class SecondLargestEle {
         } else {
             System.out.println("The second largest element in the array is: " + secondLargest);
         }
+        sc.close();
     }
 }

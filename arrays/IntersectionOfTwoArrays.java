@@ -29,6 +29,6 @@ public class IntersectionOfTwoArrays {
             }
            }}
         }
-        
+        in.close();
     }
 }

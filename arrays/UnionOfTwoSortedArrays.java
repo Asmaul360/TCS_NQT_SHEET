@@ -44,5 +44,6 @@ System.out.println("The new array element is :");
         for(int i =0;i<=uniqueIndex;i++){
             System.out.println(arr3[i]);
         }
+        in.close();
     }
 }
