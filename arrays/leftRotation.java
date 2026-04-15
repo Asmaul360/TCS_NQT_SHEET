@@ -47,16 +47,49 @@ public class leftRotation {
         System.out.println(java.util.Arrays.toString(ans));
     }
 
-    static int[] rotation(int arr[], int d) {
-        for (int i = 0; i < d; i++) {
-            int temp = arr[0];
+    // static int[] rotation(int arr[], int d) {
+    //     for (int i = 0; i < d; i++) {
+    //         int temp = arr[0];
 
-            for (int j = 1; j < arr.length; j++) {
-                arr[j - 1] = arr[j]; 
-            }
+    //         for (int j = 1; j < arr.length; j++) {
+    //             arr[j - 1] = arr[j]; 
+    //         }
 
-            arr[arr.length - 1] = temp; 
+    //         arr[arr.length - 1] = temp; 
+    //     }
+    //     return arr; 
+    // }
+    static int[] rotation(int arr[], int d){
+        int n = arr.length;
+        d = d % n;
+        int start=0;
+        int end=d-1;
+        if(n == 0) return arr;
+        while(start<end){
+            int temp=arr[start];
+            arr[start]=arr[end];
+            arr[end]=temp;
+            start++;
+            end--;
         }
-        return arr; 
+        start=d;
+        end=arr.length-1;
+        while(start<end) {
+             int temp=arr[start];
+            arr[start]=arr[end];
+            arr[end]=temp;
+            start++;
+            end--;            
+        }
+        start=0;
+        end=arr.length-1;
+         while(start<end) {
+             int temp=arr[start];
+            arr[start]=arr[end];
+            arr[end]=temp;
+            start++;
+            end--;            
+        }
+        return arr;
     }
 }
