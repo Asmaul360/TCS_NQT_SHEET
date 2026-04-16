@@ -2,7 +2,7 @@ package BinarySearch;
 
 public class lowerBound {
     public static void main(String[] args) {
-        int arr[] = {1,2,2,3};
+        int arr[] = {1,2,2,2,3};
         int target = 2;
         int ans = search(arr, target);
         System.out.println(ans);
