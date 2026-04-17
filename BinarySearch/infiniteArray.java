@@ -10,7 +10,7 @@ public class infiniteArray {
     static int ans(int []arr,int target){
          int start=0;
          int end=1;
-         if(target>arr[end]){
+         while(target>arr[end]){
             int newStart=end+1;//this is my new start
             end=end+(end-start+1)*2 ;//double the box value
             start=newStart;
